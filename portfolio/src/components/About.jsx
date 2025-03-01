@@ -1,10 +1,11 @@
 import {Container} from "react-bootstrap";
+import {PageSubtitle, PageTitle} from "./TextComponents.jsx";
 
 export function About() {
     return (
-        <Container>
-            <h1>About Me</h1>
-            <h2>dasdasdasdasdad</h2>
+        <Container className="flex justify-content-center">
+            <PageTitle text="About" />
+            <PageSubtitle text="Subtitle"/>
         </Container>
     );
 }

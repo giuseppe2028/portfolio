@@ -55,9 +55,10 @@ html {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 50px;
     scroll-snap-align: start;
-    padding: 20px;
+    padding: 80px 0 0;
 }
 .main-container {
     height: 100vh;
