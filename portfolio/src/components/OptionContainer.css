@@ -1,0 +1,25 @@
+.option-container {
+    position: fixed;  /* Fissa la barra */
+    top: 10px;  /* Stesso valore della navbar */
+    right: 20px;  /* Allineata a destra */
+    z-index: 1000;  /* Sopra gli altri elementi */
+    display: flex;
+    width: auto;
+    gap: 7px; /* Distanza tra i bottoni */
+    padding: 7px 15px;
+}
+
+.option-container button, .option-container .dropdown {
+    background: none;
+    border: none;
+    color: rgba(138, 138, 138, 0.7);
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-container button:hover, .option-container .dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}

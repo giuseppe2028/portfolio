@@ -1,0 +1,19 @@
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: #6a0dad; /* Colore viola */
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.dot::after {
+    content: "";
+    position: absolute;
+    width: 3px;  /* Spessore della linea */
+    height: 100px;  /* Altezza della linea, regolala secondo necessità */
+    background-color: #6a0dad; /* Stesso colore del dot */
+    top: 100%; /* Inizia sotto il cerchio */
+    left: 50%;
+    transform: translateX(-50%);
+}

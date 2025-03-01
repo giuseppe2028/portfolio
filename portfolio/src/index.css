@@ -1,0 +1,15 @@
+/*light*/
+:root {
+    --bg-color-navbar: #d0d1d4;
+    --text-color-inactive:#9ca3af;
+    --text-color-ac:#6b7280;
+    --primary-color: #4b5563;
+}
+
+/* Tema Dark */
+[data-theme="dark"] {
+    --bg-color-navbar: #101119;
+    --text-color-inactive:#9ca3af;
+    --text-color-ac:#6b7280;
+    --primary-color: #4b5563;
+}
