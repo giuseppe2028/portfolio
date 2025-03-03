@@ -1,102 +1,83 @@
+
+import {Link,Element} from "react-scroll"
+import {HomeSection} from "./components/HomeSection.jsx";
+import "./App.css"
+import {Container, Nav, Navbar} from "react-bootstrap";
+import {useState} from "react";
+import {Contact} from "./components/Contact.jsx";
+import {ProjectSection} from "./components/ProjectSection.jsx";
+import {SkillSection} from "./components/SkillSection.jsx";
+import {CVSection} from "./components/CVSection.jsx";
+import {About} from "./components/About.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import { ThemeContext } from "./context/ThemeContext.jsx";
-import { useContext, useRef, useState } from "react";
-import { SkillSection } from "./components/SkillSection.jsx";
-import { CVSection } from "./components/CVSection.jsx";
-import { About } from "./components/About.jsx";
-import { ProjectSection } from "./components/ProjectSection.jsx";
-import { Contact } from "./components/Contact.jsx";
-import { HomeSection } from "./components/HomeSection.jsx";
-import {OptionBar} from "./components/OptionBar.jsx";
-
 function App() {
-    const sectionsRef = {
-        home: useRef(null),
-        about: useRef(null),
-        education: useRef(null),
-        skills: useRef(null),
-        projects: useRef(null),
-        contact: useRef(null),
+    const [activeSection,setActiveSection] = useState([]);
+    const handleSetActive = (to) => {
+        setActiveSection(to)
     };
-
-    const [activeSection, setActiveSection] = useState("home");
-
-    const { darkTheme, toggleTheme } = useContext(ThemeContext);
-
-    const scrollToSection = (section) => {
-        sectionsRef[section].current.scrollIntoView({ behavior: "smooth" });
-    };
-
-    // Funzione che aggiorna la sezione attiva durante lo scroll
-    const handleScroll = (event) => {
-        const scrollPosition = event.target.scrollTop;
-        let newActiveSection = "home"; // Default
-
-        Object.keys(sectionsRef).forEach((key) => {
-            const section = sectionsRef[key].current;
-            if (section) {
-                const sectionTop = section.offsetTop - 100; // Offset per evitare transizioni premature
-                const sectionHeight = section.offsetHeight;
-
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    newActiveSection = key;
-                }
-            }
-        });
-
-        setActiveSection(newActiveSection);
-    };
-
     return (
-        <Container>
-            <Row className="justify-content-center">
-                <Navbar expand="lg" className="me-auto bg-body-tertiary custom-navbar">
-                    <Container>
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                {Object.keys(sectionsRef).map((section) => (
-                                    <Nav.Link
-                                        className={`nav-element ${activeSection === section ? "active" : ""}`}
-                                        key={section}
-                                        onClick={() => scrollToSection(section)}
+        <div>
+            <Navbar fixed="top custom-navbar">
+                <Container>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            {["home", "about", "education", "skills", "projects", "contact"].map((section) => (
+                                <Nav.Link
+                                    key={section}
+                                    className={`nav-element ${activeSection === section ? "active" : ""}`}
+                                >
+                                    <Link
+                                        activeClass="active"
+                                        to={section}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-50}
+                                        duration={500}
+                                        onSetActive={handleSetActive}
                                     >
                                         {section.charAt(0).toUpperCase() + section.slice(1)}
-                                    </Nav.Link>
-                                ))}
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
-                <OptionBar/>
-            </Row>
-            <Row>
-                <div
-                    className="main-container"
-                    onScroll={handleScroll} // Aggiungi il listener onScroll direttamente al div
-                >
-                    <section ref={sectionsRef.home} className="section">
-                        <HomeSection />
+                                    </Link>
+                                </Nav.Link>
+                            ))}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+                <Element name="home">
+                    <section className="section">
+                        <HomeSection/>
                     </section>
-                    <section ref={sectionsRef.about} className="section">
-                        <About />
+                </Element>
+                <Element name="about">
+                    <section className="section">
+                        <About/>
                     </section>
-                    <section ref={sectionsRef.education} className="section">
-                        <CVSection />
-                    </section>
-                    <section ref={sectionsRef.skills} className="section">
-                        <SkillSection />
-                    </section>
-                    <section ref={sectionsRef.projects} className="section">
-                        <ProjectSection />
-                    </section>
-                    <section ref={sectionsRef.contact} className="section">
-                        <Contact />
-                    </section>
-                </div>
-            </Row>
-        </Container>
+
+                </Element>
+            <Element name = "education">
+                <section  className="section">
+                    <CVSection/>
+                </section>
+
+            </Element>
+            <Element name="skills">
+                <section className="section section-skill">
+                    <SkillSection/>
+                </section>
+            </Element>
+            <Element name="projects">
+                <section className="section">
+                    <ProjectSection/>
+                </section>
+            </Element>
+            <Element name="contact">
+                <section className="section">
+                    <Contact/>
+                </section>
+            </Element>
+            {/* Add more sections with Element components as needed */}
+        </div>
     );
 }
 

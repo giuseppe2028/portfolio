@@ -1,6 +1,6 @@
 /*light*/
 :root {
-    --bg-color-navbar: #d0d1d4;
+    --bg-color-navbar: rgba(208, 209, 212, 0.75);
     --text-color-inactive:#9ca3af;
     --text-color-ac:#6b7280;
     --primary-color: #4b5563;
