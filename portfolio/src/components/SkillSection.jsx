@@ -16,10 +16,10 @@ export const SkillSection = () => {
 
     return (
         <Container>
-            <Row>
+            <Row className="d-flex justify-content-center align-items-center">
                 <h6>I CONSTANTLY TRY TO IMPROVE</h6>
             </Row>
-            <Row style={{ marginBottom: 20 }}>
+            <Row className="d-flex justify-content-center align-items-center" style={{ marginBottom: 20 }}>
                 <h3>MY TECH STACK</h3>
             </Row>
 
@@ -44,10 +44,22 @@ const SkillCard = ({ item }) => {
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >
-                <img src={react} alt={item.name} className={`skill-icon ${hovered ? "blurred" : ""}`}/>
+                <img
+                    src={item.icon}
+                    alt={item.name}
+                    className={`skill-icon ${hovered ? "blurred" : ""}`}
+                    style={{
+                        width: "90px",
+                        height: "90px",
+                        padding: "15px",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        display: "inline-block"
+                    }}
+                />
                 <h6 className="mt-3">{item.name}</h6>
-                <div className={`overlay ${hovered ? "show" : ""}`}>
-                    <h3>Ciaoooo</h3>
+                <div className={`overlay ${hovered ? "show" : ""}`} style={{paddingLeft: "15px", paddingRight: "15px"}}>
+                    <h6 style={{fontSize: "13px"}}>{item.description}</h6>
                 </div>
             </div>
         </Col>

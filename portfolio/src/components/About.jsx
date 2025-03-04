@@ -1,6 +1,7 @@
 import {Container, Row, Col, Button} from "react-bootstrap";
 import { PageSubtitle, PageTitle } from "./TextComponents.jsx";
 import image from "../assets/react.svg"
+import {ButtonLink} from "./ButtonLink.jsx";
 export function About() {
     return (
         <Container className="d-flex flex-column align-items-center py-5" style={{ maxWidth: "900px" }}>
@@ -31,12 +32,16 @@ export function About() {
                     </p>
                 </Col>
             </Row>
-            <Row className="d-flex justify-content-start">
+            <Row className="d-flex justify-content-start mt-3">
                 <Col>
-                    <ButtonLink image = {image} text="Github" onclick={()=>{}}/>
+                    <ButtonLink image = "public/images/github.svg" text="Github" onClick={()=>{
+                        window.open("https://github.com/giuseppe2028", "_blank");
+                    }}/>
                 </Col>
                 <Col>
-                    <ButtonLink image = {image} text="LinkedIn" onclick={()=>{}}/>
+                    <ButtonLink image = "public/images/linkedin.svg" text="LinkedIn" onClick={()=>{
+                        window.open("https://www.linkedin.com/in/giuseppe-barone-749210215/", "_blank");
+                    }}/>
                 </Col>
             </Row>
         </Container>
@@ -44,29 +49,5 @@ export function About() {
 }
 
 
-const ButtonLink = (props) => {
-    return (
-        <Button
-            onClick={props.onclick}
-            style={{
-                backgroundColor: "#f0f0f0", // Colore grigio chiaro
-                border: "1px solid",
-                borderColor: "#8f8f8f",
-                display: "flex", // Allinea l'immagine e il testo in una riga
-                alignItems: "center", // Centra verticalmente l'immagine e il testo
-                padding: "10px 15px", // Aggiungi un po' di padding per migliorare l'aspetto
-                borderRadius: "15px", // Bordo arrotondato per un look più moderno
-                cursor: "pointer", // Cambia il cursore quando il mouse è sopra
-                color: "black", // Colore del testo
-                fontSize: "0.875rem", // Dimensione del testo
-                transition: "all 0.3s ease", // Aggiunge transizioni per hover
-            }}
 
-        >
-            {props.image && <img src={props.image} alt="icon" style={{ marginRight: "10px", height: "20px" }} />}
-            {props.text}
-        </Button>
-    );
-}
 
-export default ButtonLink;

@@ -1,5 +1,6 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./Contact.css";
+import {ButtonLink} from "./ButtonLink.jsx";
 export const Contact = () => {
     return (
         <Container className="ps-0 pe-0">
@@ -30,10 +31,24 @@ export const Contact = () => {
                             />
                         </Form.Group>
 
-                        <Button variant="primary" type="submit" style={{justifyContent: "start"}}>
-                            Submit
-                        </Button>
-                    </Form>
+                        <ButtonLink
+                            type="submit"
+                            style={{ justifyContent: "end" }}
+                            text={<><i className="bi bi-send me-2"></i> Submit</>}
+                            onClick={() => {
+                                const email = document.getElementById("formBasicEmail").value;
+                                const message = document.getElementById("formBasicMessage").value;
+
+                                if (email && message) {
+                                    const subject = "Contact Form Submission";
+                                    const body = `From: ${email}%0D%0A%0D%0A${message}`;
+                                    window.location.href = `mailto:giuseppebarone2028@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                                } else {
+                                    alert("Please fill in both fields before submitting.");
+                                }
+                            }}
+                        />
+                        </Form>
                 </Col>
             </Row>
         </Container>

@@ -1,11 +1,14 @@
 .box {
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    align-items: center; /* Centra orizzontalmente */
+    display: flex;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    background: #454545;
+    background: rgba(200, 200, 200, 0.85);
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    padding:10px;
+    padding: 5px 2px;
 }
 
 .box img {
