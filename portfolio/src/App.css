@@ -1,15 +1,15 @@
 html {
     scroll-behavior: smooth;
 }
+
 .custom-navbar {
     position: fixed;
     justify-content: center;
-    z-index: 1000;  /* Imposta il livello di profondità, sopra gli altri contenuti */
+    z-index: 1000;  /* Imposta il livello di profondità sopra gli altri contenuti */
     border-radius: 50px;
     height: auto;
-    background-color:var(--bg-color-navbar) ;
+    background-color:var(--bg-color-navbar);
     margin: 10px auto;  /* Centra la navbar orizzontalmente */
-    border-radius: 50px;
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
@@ -21,7 +21,7 @@ html {
     width: fit-content;  /* Impedisce alla navbar di allargarsi completamente */
 }
 
-.nav-element{
+.nav-element {
     margin-right: 7px;
     margin-left: 7px;
 }
@@ -30,13 +30,13 @@ html {
     display: inline-flex;
     color: rgba(138, 138, 138, 0.32); /* Colore normale */
     transition: all 0.5s linear;
-    align-items: center;       /* Centra verticalmente il contenuto */
-    justify-content: center;   /* Centra orizzontalmente il contenuto */
-    padding: 10px 20px;        /* Padding iniziale (questo sarà modificato dinamicamente) */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 50px;
-    width: 90px; /* Larghezza fissa per ogni box (puoi regolarla come preferisci) */
+    width: 90px;
     height: 30px;
     margin-left: 2px;
     margin-right: 2px;
@@ -47,24 +47,33 @@ html {
     background-color: rgba(44, 43, 41, 0.2); /* Sfondo visibile */
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); /* Aura attorno */
     border-radius:50px;
-    color: #2c1d1d; /* Cambia colore del testo */
+    color: #2c1d1d;
 }
-a.active{
+
+a.active {
     color: #2c1d1d;
     text-decoration: none;
 }
+
+/* Aggiungi un margine superiore per evitare la sovrapposizione con la navbar */
 .section {
-    height: 100vh;
+    height: auto; /* Imposta l'altezza in base al contenuto */
+    min-height: 100vh; /* Assicurati che la sezione prenda almeno tutta la visualizzazione */
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 100px; /* Spazio per la navbar fissa */
+    padding-top: 20px;
     scroll-snap-align: start;
     padding: 80px 0 0;
+    z-index: 1;
 }
-.section-skill{
-    height: 120vh;
+
+.section-skill {
+    min-height: 120vh;
+    margin-top: 100px; /* Spazio per la navbar fissa */
 }
+
 .main-container {
     height: 100vh;
     overflow-y: scroll;

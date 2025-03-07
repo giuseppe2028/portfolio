@@ -1,9 +1,13 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { skillData } from "../data/data.js";
+
 import react from "../assets/react.svg";
 import "./SkillSection.css"
+import {useData} from "../hooks/DataContext.jsx";
+import {useTranslation} from "react-i18next";
 export const SkillSection = () => {
+    const { t,i18n } = useTranslation();
+    const { data, loading } = useData();
     const chunkArray = (arr, size) => {
         let result = [];
         for (let i = 0; i < arr.length; i += size) {
@@ -11,16 +15,18 @@ export const SkillSection = () => {
         }
         return result;
     };
-
-    const chunkedData = chunkArray(skillData, 6);
+    const skillData = t('skillData',{ returnObjects: true })
+    const chunkedData = chunkArray(skillData || [], 6);
 
     return (
-        <Container>
-            <Row className="d-flex justify-content-center align-items-center">
-                <h6>I CONSTANTLY TRY TO IMPROVE</h6>
+        <Container data-aos="fade-up"
+                   data-aos-anchor-placement="top-bottom"
+                   data-aos-duration="1500">
+            <Row className="d-flex justify-content-center align-items-center text-center    ">
+                <h6>{t("I CONSTANTLY TRY TO IMPROVE")}</h6>
             </Row>
-            <Row className="d-flex justify-content-center align-items-center" style={{ marginBottom: 20 }}>
-                <h3>MY TECH STACK</h3>
+            <Row className="d-flex justify-content-center align-items-center text-center" style={{ marginBottom: 20 }}>
+                <h3 className="text-center"><strong>{t('MY TECH STACK')}</strong></h3>
             </Row>
 
             {chunkedData.map((chunk, index) => (

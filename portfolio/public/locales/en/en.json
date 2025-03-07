@@ -1,0 +1,104 @@
+{
+  "translation": {
+    "home": "Home",
+    "about": "About",
+    "educationBar": "Education",
+    "skills": "Skills",
+    "projectsBar": "Projects",
+    "contact": "Contact",
+    "greeting": "Hello <span style='font-size: 1.2em'>👋</span>, I'm <strong>{{name}}</strong>",
+    "subtitle": "Master's degree student - Software Engineering at <br/><strong>{{university}}</strong>",
+    "resume": "Get Resume",
+    "I CONSTANTLY TRY TO IMPROVE": "I CONSTANTLY TRY TO IMPROVE",
+    "MY TECH STACK": "MY TECH STACK",
+    "More About Me": "More About Me",
+    "about1": "I am a Master’s degree student with a strong passion for personal projects. I graduated with a Bachelor’s degree from the University of Palermo, where I worked on various university projects that allowed me to collaborate in teams and develop strong communication skills, even with people from around the world. In addition, I dedicated time to personal projects to expand my knowledge and skills.",
+    "about2": "When I’m not coding, I focus on staying updated with the latest technologies and on personal growth. I also enjoy working with electronics.",
+    "about3": "I have also contributed to an open-source project, which helped me understand the importance of working with large codebases and reviewing code written by others.",
+    "A Student with High Attention to Personal Projects": "A Student with High Attention to Personal Projects",
+    "Projects": "Projects",
+    "Submit": "Submit",
+    "Your email": "Your email",
+    "Your Message": "Your Message",
+    "ContactTitle": "Contact Me",
+    "contactSubtitle": "Please contact me directly at\n                        <a href=\"mailto:giuseppebarone2028@gmail.com\" style={{ textDecoration: \"none\"}}>\n                            giuseppebarone2028@gmail.com\n                        </a>\n                        or through this form.",
+    "skillData": [
+      { "name": "HTML", "icon": "/skillimages/html.svg", "description": "Markup language used to structure web pages." },
+      { "name": "CSS", "icon": "/skillimages/css.svg", "description": "Style sheet language used to define the appearance and layout of web pages." },
+      { "name": "JavaScript", "icon": "/skillimages/javascript.svg", "description": "Scripting language used to make web pages interactive and dynamic." },
+      { "name": "TypeScript", "icon": "/skillimages/typescript.svg", "description": "Superset of JavaScript that adds static typing support, improving code maintainability." },
+      { "name": "ReactJS", "icon": "/skillimages/react.svg", "description": "JavaScript library for building reactive, component-based user interfaces." },
+      { "name": "NodeJS", "icon": "/skillimages/nodejs.svg", "description": "JavaScript runtime environment for server-side development, based on the V8 engine." },
+      { "name": "ExpressJS", "icon": "/skillimages/express.svg", "description": "Minimalist Node.js framework that simplifies API and web server creation." },
+      { "name": "Rust", "icon": "/skillimages/rust.svg", "description": "Modern, safe programming language ideal for high-performance system development." },
+      { "name": "MongoDB", "icon": "/skillimages/mongodb.svg", "description": "NoSQL document-oriented database used for handling large volumes of flexible data." },
+      { "name": "MySQL", "icon": "/skillimages/mysql.svg", "description": "Relational database management system (RDBMS) widely used for web applications and enterprise software." },
+      { "name": "PostgreSQL", "icon": "/skillimages/postgresql.svg", "description": "Advanced open-source relational database with support for complex SQL operations." },
+      { "name": "SQLite", "icon": "/skillimages/sqlite.svg", "description": "Lightweight, self-contained SQL database engine commonly used for embedded systems and small applications." },
+      { "name": "Android", "icon": "/skillimages/android.svg", "description": "Mobile operating system developed by Google, used for building mobile applications." },
+      { "name": "Arduino", "icon": "/skillimages/arduino.svg", "description": "Open-source hardware and software platform for creating interactive electronics projects." },
+      { "name": "Bootstrap", "icon": "/skillimages/bootstrap.svg", "description": "CSS framework that simplifies the creation of responsive and modern web interfaces." },
+      { "name": "Flask", "icon": "/skillimages/flask.svg", "description": "Lightweight Python micro-framework for building scalable web applications." },
+      { "name": "Flutter", "icon": "/skillimages/flutter.svg", "description": "UI framework developed by Google for creating native apps on mobile, web, and desktop." },
+      { "name": "Java", "icon": "/skillimages/java.svg", "description": "Versatile programming language widely used for enterprise, mobile, and web development." },
+      { "name": "Kotlin", "icon": "/skillimages/kotlin.svg", "description": "Modern and concise programming language preferred for Android development." },
+      { "name": "Python", "icon": "/skillimages/python.svg", "description": "Versatile and easy-to-learn programming language used in web development, AI, and automation." },
+      { "name": "GraphQL", "icon": "/skillimages/graphql.svg", "description": "Query language for APIs that enables fetching precise data in a more efficient way compared to REST." },
+      { "name": "Sonar Cloud", "icon": "/skillimages/sonarcloud.svg", "description": "Code analysis tool that helps improve software quality and security." },
+      { "name": "socketIO", "icon": "/skillimages/socket.io.svg", "description": "JavaScript library for real-time communication between client and server using WebSockets." },
+      { "name": "Git", "icon": "/skillimages/git.svg", "description": "Distributed version control system used for source code management and collaboration." }
+    ],
+    "projects": [
+      {
+        "name": "Softwork",
+        "images": ["projectImage/p1/img1.png", "projectImage/p1/img2.png", "projectImage/p1/img3.png"],
+        "madeWith": [
+          { "name": "MySQL", "icon": "/skillimages/mysql.svg" },
+          { "name": "Java", "icon": "/skillimages/java.svg" }
+        ],
+        "description": "Project developed for the Software Engineering course, during the Bachelor's degree in Computer Engineering. This software, built using the JavaFX framework, allows you to manage the shifts of an entire company. Each employee can clock in and out on different terminals placed around the company.",
+        "links": ["github"]
+      },
+      {
+        "name": "MiSvaGo",
+        "images": ["projectImage/p2/img1.png", "projectImage/p2/img2.png", "projectImage/p2/img3.png"],
+        "madeWith": [
+          { "name": "Android", "icon": "/skillimages/android.svg" },
+          { "name": "Kotlin", "icon": "/skillimages/kotlin.svg" },
+          { "name": "SQLite", "icon": "/skillimages/sqlite.svg" }
+        ],
+        "description": "Project developed for a travel package booking app. This project was developed using Kotlin and XML, with Retrofit for HTTP calls.",
+        "link": "github"
+      },
+      {
+        "name": "What Do You Meme",
+        "images": ["projectImage/p3/img1.png", "projectImage/p3/img2.png"],
+        "madeWith": [
+          { "name": "Bootstrap", "icon": "/skillimages/bootstrap.svg" },
+          { "name": "CSS", "icon": "/skillimages/css.svg" },
+          { "name": "HTML", "icon": "/skillimages/html.svg" },
+          { "name": "JavaScript", "icon": "/skillimages/javascript.svg" },
+          { "name": "React", "icon": "/skillimages/react.svg" },
+          { "name": "SQLite", "icon": "/skillimages/sqlite.svg" },
+          { "name": "Express", "icon": "/skillimages/express.svg" }
+        ],
+        "description": "Project developed for the WebApp1 course. This project was developed with both a backend and a frontend. The backend was created using Node, Express, and JavaScript, while the frontend used React, Bootstrap, and JavaScript.",
+        "link": "github"
+      }
+    ],
+    "education": [
+      {
+        "name": "Master's degree in Computer Science at Politecnico di Torino",
+        "date": "2023-Today",
+        "logo": "/formazione/logo_polito.png",
+        "description": "In this course, I have taken various classes that helped me grow professionally, working on several projects with international teams. I studied distributed systems in-depth, as well as DevOps and agile technologies."
+      },
+      {
+        "name": "Bachelor's degree in Computer Science at University of Palermo",
+        "date": "2020-2023",
+        "logo": "/formazione/logo_unipa.png",
+        "description": "During this degree, I faced multiple steps, starting with engineering subjects like electronics and analysis, and moving to more IT-focused subjects like Java, MySQL, Android, and Kotlin. I also had the chance to work in several teams during various projects."
+      }
+    ]
+  }
+}

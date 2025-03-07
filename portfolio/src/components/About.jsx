@@ -2,33 +2,31 @@ import {Container, Row, Col, Button} from "react-bootstrap";
 import { PageSubtitle, PageTitle } from "./TextComponents.jsx";
 import image from "../assets/react.svg"
 import {ButtonLink} from "./ButtonLink.jsx";
+import {useTranslation} from "react-i18next";
 export function About() {
+    const {t} = useTranslation();
     return (
-        <Container className="d-flex flex-column align-items-center py-5" style={{ maxWidth: "900px" }}>
+        <Container className="d-flex flex-column align-items-center py-5" style={{ maxWidth: "900px" }} data-aos="fade-up"
+                   data-aos-anchor-placement="top-bottom"
+                   data-aos-duration="1500">
             <Row className="mb-3">
-                <h6 className="text-muted">More About Me</h6>
+                <h6 className="text-muted">{t('More About Me')}</h6>
             </Row>
             <Row className="mb-4">
-                <h1 className="text-center" style={{ fontSize: "2.5rem", fontWeight: "bold" }}>A Student with High Attention to Personal Projects</h1>
+                <h1 className="text-center" style={{ fontSize: "2.5rem", fontWeight: "bold" }}>{t('A Student with High Attention to Personal Projects')}</h1>
             </Row>
             <Row>
                 <Col>
                     <p className="about-text">
-                        I am a Master’s degree student with a strong passion for personal projects. I graduated with a
-                        Bachelor’s degree from the University of Palermo, where I worked on various university projects that
-                        allowed me to collaborate in teams and develop strong communication skills, even with people from
-                        around the world. In addition, I dedicated time to personal projects to expand my knowledge and
-                        skills.
+                        {t('about1')}
                     </p>
 
                     <p className="about-text">
-                        When I’m not coding, I focus on staying updated with the latest technologies and on personal growth.
-                        I also enjoy working with electronics.
+                        {t('about2')}
                     </p>
 
                     <p className="about-text">
-                        I have also contributed to an open-source project, which helped me understand the importance of
-                        working with large codebases and reviewing code written by others.
+                        {t('about3')}
                     </p>
                 </Col>
             </Row>

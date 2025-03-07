@@ -1,0 +1,17 @@
+.project-card {
+    border: 1px solid;
+    border-radius: 20px;
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}
+.carousel-img {
+    width: 100%;  /* Le immagini dovrebbero adattarsi al contenitore */
+    height: 300px;  /* Mantieni le proporzioni corrette */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+

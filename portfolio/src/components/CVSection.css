@@ -1,19 +1,42 @@
-.dot {
-    width: 14px;
-    height: 14px;
-    background-color: #6a0dad; /* Colore viola */
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
+/* CVSection.css */
+
+/* Contenitore principale della card */
+.card-section {
+    margin: 5px; /* Riduce la distanza tra le card */
+    border: 1px solid #6c6c6c;
+    border-radius: 20px;
+    justify-content: center;
+    display: inline-block;
+    max-width: 700px; /* Limita la larghezza massima della card */
+    padding: 20px; /* Rimuove il padding extra per adattarsi al contenuto */
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    box-sizing: border-box; /* Include il bordo nel calcolo delle dimensioni */
+}
+.card-section .text-block {
+    width: 100%; /* Assicurati che prenda tutta la larghezza disponibile */
+    display: block; /* Imposta il comportamento del blocco */
+}
+/* Righe della card senza spazi aggiuntivi */
+.card-section .row {
+    margin: 0;
+    padding: 0;
 }
 
-.dot::after {
-    content: "";
-    position: absolute;
-    width: 3px;  /* Spessore della linea */
-    height: 100px;  /* Altezza della linea, regolala secondo necessità */
-    background-color: #6a0dad; /* Stesso colore del dot */
-    top: 100%; /* Inizia sotto il cerchio */
-    left: 50%;
-    transform: translateX(-50%);
+/* Contenitore dell'immagine che non ha dimensioni fisse */
+.image-container {
+    width: 200px;  /* Limite massimo di larghezza */
+    height: auto; /* Altezza adattiva */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita che l'immagine ecceda */
+    background-color: white; /* Fondo neutro per l'immagine */
+}
+
+/* Immagine che si adatta al contenitore */
+.fixed-size-img {
+    width: 100%;  /* L'immagine si adatta alla larghezza del contenitore */
+    height: auto; /* L'altezza si adatta mantenendo le proporzioni */
+    object-fit: contain; /* Mantiene le proporzioni senza tagliare l'immagine */
 }

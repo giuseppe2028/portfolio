@@ -2,7 +2,15 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 import profileImage from "../assets/profileImage.jpeg";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {ButtonLink} from "./ButtonLink.jsx";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect} from "react";
+import {useTranslation} from "react-i18next";
 export function HomeSection() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
         const handleDownload = () => {
             const pdfUrl = "/files/cv.pdf"; // Percorso del file PDF nella cartella public
             const link = document.createElement("a");
@@ -12,21 +20,23 @@ export function HomeSection() {
             link.click();
             document.body.removeChild(link);
         };
+    const { t,i18n } = useTranslation();
     return (
-        <Container className="py-5 mt-5">
+        <Container className="py-5 mt-5" data-aos="fade-up"
+                   data-aos-anchor-placement="top-bottom"
+                   data-aos-duration="1500">
             <Row className="mb-0 pb-0">
                 <Col md={6} className="mt-4">
                     <div style={{textAlign: "center", fontFamily: "Arial, sans-serif"}}>
-                        <h1>Hello <span style={{fontSize: "1.2em"}}>👋</span>, I'm <strong>Giuseppe Barone</strong></h1>
-                        <p style={{fontSize: "1.2em", color: "#555"}}>
-                            Master's degree student - Software Engineering at <br/>
-                            <strong>Politecnico of Turin</strong>
+                        <h1 dangerouslySetInnerHTML={{__html: t("greeting", {name: "Giuseppe Barone"})}}></h1>
+                        <p style={{fontSize: "1.2em", color: "#555"}}
+                           dangerouslySetInnerHTML={{__html: t("subtitle", {university: "Politecnico of Turin"})}}>
                         </p>
                         <div className="d-flex justify-content-end me-5 mt-5">
                             <ButtonLink
                                 text={
                                     <>
-                                        <i className="bi bi-download me-2"></i> Get Resume
+                                        <i className="bi bi-download me-2"></i> {t("resume")}
                                     </>
                                 }
                                 onClick={handleDownload}
@@ -35,7 +45,7 @@ export function HomeSection() {
                     </div>
                 </Col>
                 <Col md={6} className="text-center">
-                    <img
+                <img
                         src={profileImage}
                         alt="Giuseppe Barone"
                         style={{ width: "80%", maxWidth: "300px", borderRadius: "50%" }}
