@@ -28,25 +28,22 @@ export function CVSection() {
         </div>
     );
 }
-
 function CardSection({ image, title, date, description }) {
     return (
         <div className="card-section">
-            <Row className="d-flex g-0 align-items-center justify-content-center ps-0 pe-0 ms-0 me-0">
+            <Row className="d-flex g-0 align-items-center justify-content-center flex-column flex-md-row ps-0 pe-0 ms-0 me-0">
                 {image && (
-                    <Col md={4} className="text-center g-0">
-                        <div className="image-container">
+                    <Col xs={12} md={4} className="text-center g-0">
                             <img src={image} alt={title} className="fixed-size-img" />
-                        </div>
                     </Col>
                 )}
-                <Col md={6} style={{marginTop:10}}>
+                <Col xs={12} md={6} className="text-center text-md-start custom-container" style={{ marginTop: 10 }}>
                     <Row className="g-0">
                         <div className="text-block">
                             <h5><strong>{title}</strong></h5>
                         </div>
                     </Row>
-                    <Row className="g-0 text-muted" style={{marginBottom:30}}>
+                    <Row className="g-0 text-muted" style={{ marginBottom: 30 }}>
                         <div className="text-block">{date}</div>
                     </Row>
                     <Row className="g-0">

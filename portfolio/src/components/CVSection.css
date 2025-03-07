@@ -40,3 +40,38 @@
     height: auto; /* L'altezza si adatta mantenendo le proporzioni */
     object-fit: contain; /* Mantiene le proporzioni senza tagliare l'immagine */
 }
+.custom-submit{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+    .custom-container{
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
+    .card-section {
+        text-align: center; /* Centra tutto il testo */
+        display: flex;
+        flex-direction: column; /* Imposta la direzione verticale */
+        align-items: center; /* Centra il contenuto */
+    }
+    .fixed-size-img {
+        width: 100%;  /* L'immagine si adatta alla larghezza del contenitore */
+        height: auto; /* L'altezza si adatta mantenendo le proporzioni */
+        object-fit: contain; /* Mantiene le proporzioni senza tagliare l'immagine */
+    }
+    .image-container {
+        width: fit-content; /* Occupa tutta la larghezza disponibile */
+        margin-bottom: 15px; /* Spazio tra l'immagine e il testo */
+    }
+
+    .fixed-size-img {
+        width: 100%; /* Occupa tutta la larghezza disponibile */
+        max-width: 200px; /* Imposta una larghezza massima */
+    }
+    .custom-submit{
+        justify-content: center;
+    }
+}
+

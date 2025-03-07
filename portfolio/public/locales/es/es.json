@@ -57,7 +57,7 @@
           { "name": "Java", "icon": "/skillimages/java.svg" }
         ],
         "description": "Proyecto desarrollado para el curso de Ingeniería de Software, durante la licenciatura en Ingeniería Informática. Este software, construido utilizando el marco JavaFX, permite gestionar los turnos de toda una empresa. Cada empleado puede registrar su entrada y salida en diferentes terminales ubicados por la empresa.",
-        "links": ["github"]
+        "link": ["https://github.com/giuseppe2028/ProgettoCompleto"]
       },
       {
         "name": "MiSvaGo",
@@ -68,7 +68,7 @@
           { "name": "SQLite", "icon": "/skillimages/sqlite.svg" }
         ],
         "description": "Proyecto desarrollado para una aplicación de reservas de paquetes turísticos. Este proyecto fue desarrollado usando Kotlin y XML, con Retrofit para llamadas HTTP.",
-        "link": "github"
+        "link": "https://github.com/giuseppe2028/ProgettoPWM.git"
       },
       {
         "name": "What Do You Meme",
@@ -83,7 +83,7 @@
           { "name": "Express", "icon": "/skillimages/express.svg" }
         ],
         "description": "Proyecto desarrollado para el curso WebApp1. Este proyecto fue desarrollado tanto con un backend como un frontend. El backend fue creado con Node, Express y JavaScript, mientras que el frontend usó React, Bootstrap y JavaScript.",
-        "link": "github"
+        "link": "https://github.com/giuseppe2028/meme_game.git"
       }
     ],
     "education": [

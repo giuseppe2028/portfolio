@@ -33,7 +33,7 @@ export function ProjectSection() {
 
 const ProjectCard = (props) => {
     return (
-        <Container className="project-card mb-4" style={{width: '50%', borderColor: "black", padding: '20px'}}>
+        <Container className="project-card mb-4">
             <Row className="d-flex justify-content-center align-items-center" style={{paddingTop:20, paddingBottom:20}}>
                 {Array.isArray(props.img) && props.img.length === 1 ? (
                     <img width="100%" height="300px" className="object-fit-contain" src={props.img[0]} alt="Immagine"/>

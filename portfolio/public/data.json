@@ -34,7 +34,7 @@
         { "name": "Java", "icon": "/skillimages/java.svg" }
       ],
       "description": "Progetto realizzato per la materia Ingegneria del software, all'interno del percosrso di studi trienale di ingegneria informatica. All'interno di questo software, costruti attraverso il framewok javafx, è possibile gestire i turni di un'intera azienda. Ogni dipendente può timbrare un'entrata ed un'uscita all'iterno di altri termiali disposti all'interno dell'azienda.",
-      "links": ["github"]
+      "links": ["https://github.com/giuseppe2028/ProgettoCompleto"]
     },
     {
       "name": "MiSvaGo",
@@ -45,7 +45,7 @@
         { "name": "Sqlite", "icon": "/skillimages/sqlite.svg" }
       ],
       "description": "Progetto realizzato per la realizzazioen di un'applicazione di acquisto pacchetti viaggi. Tale progetto è stato sviluppato con l'ausilio di Kotlin e XML, e retrofit per le chiamate HTPP.",
-      "link": "github"
+      "link": "https://github.com/giuseppe2028/ProgettoPWM.git"
     },{
       "name": "What Do You Meme",
       "images": ["projectImage/p3/img1.png","projectImage/p3/img2.png"],
@@ -59,7 +59,7 @@
         { "name": "Express", "icon": "/skillimages/express.svg" }
       ],
       "description": "Progetto realizzato per il corso di webapp1. Tale progetto è stato realizzato con un backend e un frontend. Il back-end è stato realizzato utilizzando react, bootstrap e javascript per il front-end, e node, express e javascript per il back-end.",
-      "link": "github"
+      "link": "https://github.com/giuseppe2028/meme_game.git"
     }
 
   ],

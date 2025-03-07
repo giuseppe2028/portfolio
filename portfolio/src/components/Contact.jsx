@@ -79,7 +79,7 @@ export const Contact = () => {
                             />
                         </Form.Group>
 
-                        <div className="d-flex justify-content-end">
+                        <div className="custom-submit">
                             <ButtonLink
                                 type="submit"
                                 style={{ justifyContent: "end" }}

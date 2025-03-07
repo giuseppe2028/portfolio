@@ -1,41 +1,41 @@
 {
   "translation": {
-    "home": "Inicio",
-    "about": "Acerca de",
-    "educationBar": "Educación",
-    "skills": "Habilidades",
-    "projectsBar": "Proyectos",
-    "contact": "Contacto",
-    "greeting": "Hola <span style='font-size: 1.2em'>👋</span>, soy <strong>{{name}}</strong>",
-    "subtitle": "Estudiante de maestría - Ingeniería de software en <br/><strong>{{university}}</strong>",
-    "resume": "Obtener currículum",
-    "I CONSTANTLY TRY TO IMPROVE": "SIEMPRE INTENTO MEJORAR",
-    "MY TECH STACK": "MI PILA TECNOLÓGICA",
+    "home": "Startseite",
+    "about": "Über uns",
+    "educationBar": "Bildung",
+    "skills": "Fähigkeiten",
+    "projectsBar": "Projekte",
+    "contact": "Kontakt",
+    "greeting": "Hallo <span style='font-size: 1.2em'>👋</span>, ich bin <strong>{{name}}</strong>",
+    "subtitle": "Masterstudent - Softwaretechnik an der <br/><strong>{{university}}</strong>",
+    "resume": "Lebenslauf herunterladen",
+    "I CONSTANTLY TRY TO IMPROVE": "ICH VERSUCHE STÄNDIG, MICH ZU VERBESSERN",
+    "MY TECH STACK": "MEIN TECHNOLOGIE-STACK",
     "skillData": [
-      { "name": "HTML", "icon": "/skillimages/html.svg", "description": "Lenguaje de marcado utilizado para estructurar páginas web." },
-      { "name": "CSS", "icon": "/skillimages/css.svg", "description": "Lenguaje de hojas de estilo utilizado para definir la apariencia y el diseño de las páginas web." },
-      { "name": "JavaScript", "icon": "/skillimages/javascript.svg", "description": "Lenguaje de programación utilizado para hacer que las páginas web sean interactivas y dinámicas." },
-      { "name": "TypeScript", "icon": "/skillimages/typescript.svg", "description": "Superconjunto de JavaScript que añade soporte de tipado estático, mejorando el mantenimiento del código." },
-      { "name": "ReactJS", "icon": "/skillimages/react.svg", "description": "Biblioteca de JavaScript para construir interfaces de usuario reactivas y basadas en componentes." },
-      { "name": "NodeJS", "icon": "/skillimages/nodejs.svg", "description": "Entorno de ejecución de JavaScript para desarrollo del lado del servidor, basado en el motor V8." },
-      { "name": "ExpressJS", "icon": "/skillimages/express.svg", "description": "Framework minimalista de Node.js que simplifica la creación de APIs y servidores web." },
-      { "name": "Rust", "icon": "/skillimages/rust.svg", "description": "Lenguaje de programación moderno y seguro, ideal para el desarrollo de sistemas de alto rendimiento." },
-      { "name": "MongoDB", "icon": "/skillimages/mongodb.svg", "description": "Base de datos NoSQL orientada a documentos utilizada para manejar grandes volúmenes de datos flexibles." },
-      { "name": "MySQL", "icon": "/skillimages/mysql.svg", "description": "Sistema de gestión de bases de datos relacional (RDBMS) ampliamente utilizado en aplicaciones web y software empresarial." },
-      { "name": "PostgreSQL", "icon": "/skillimages/postgresql.svg", "description": "Base de datos relacional de código abierto avanzada con soporte para operaciones SQL complejas." },
-      { "name": "SQLite", "icon": "/skillimages/sqlite.svg", "description": "Motor de base de datos SQL ligero y autónomo, comúnmente usado en sistemas embebidos y aplicaciones pequeñas." },
-      { "name": "Android", "icon": "/skillimages/android.svg", "description": "Sistema operativo móvil desarrollado por Google, utilizado para crear aplicaciones móviles." },
-      { "name": "Arduino", "icon": "/skillimages/arduino.svg", "description": "Plataforma de hardware y software de código abierto para crear proyectos electrónicos interactivos." },
-      { "name": "Bootstrap", "icon": "/skillimages/bootstrap.svg", "description": "Framework CSS que simplifica la creación de interfaces web modernas y responsivas." },
-      { "name": "Flask", "icon": "/skillimages/flask.svg", "description": "Micro-framework ligero de Python para construir aplicaciones web escalables." },
-      { "name": "Flutter", "icon": "/skillimages/flutter.svg", "description": "Framework de UI desarrollado por Google para crear aplicaciones nativas en móviles, web y escritorio." },
-      { "name": "Java", "icon": "/skillimages/java.svg", "description": "Lenguaje de programación versátil ampliamente utilizado en desarrollo empresarial, móvil y web." },
-      { "name": "Kotlin", "icon": "/skillimages/kotlin.svg", "description": "Lenguaje de programación moderno y conciso, preferido para el desarrollo de Android." },
-      { "name": "Python", "icon": "/skillimages/python.svg", "description": "Lenguaje de programación versátil y fácil de aprender, utilizado en desarrollo web, IA y automatización." },
-      { "name": "GraphQL", "icon": "/skillimages/graphql.svg", "description": "Lenguaje de consulta para APIs que permite obtener datos precisos de manera más eficiente en comparación con REST." },
-      { "name": "Sonar Cloud", "icon": "/skillimages/sonarcloud.svg", "description": "Herramienta de análisis de código que ayuda a mejorar la calidad y seguridad del software." },
-      { "name": "socketIO", "icon": "/skillimages/socket.io.svg", "description": "Biblioteca de JavaScript para la comunicación en tiempo real entre cliente y servidor mediante WebSockets." },
-      { "name": "Git", "icon": "/skillimages/git.svg", "description": "Sistema de control de versiones distribuido utilizado para la gestión del código fuente y la colaboración." }
+      { "name": "HTML", "icon": "/skillimages/html.svg", "description": "Auszeichnungssprache, die verwendet wird, um Webseiten zu strukturieren." },
+      { "name": "CSS", "icon": "/skillimages/css.svg", "description": "Stylesheet-Sprache, die verwendet wird, um das Aussehen und Layout von Webseiten zu definieren." },
+      { "name": "JavaScript", "icon": "/skillimages/javascript.svg", "description": "Programmiersprache, die verwendet wird, um Webseiten interaktiv und dynamisch zu machen." },
+      { "name": "TypeScript", "icon": "/skillimages/typescript.svg", "description": "Superset von JavaScript, das statische Typisierung hinzufügt und die Wartbarkeit des Codes verbessert." },
+      { "name": "ReactJS", "icon": "/skillimages/react.svg", "description": "JavaScript-Bibliothek zum Erstellen von reaktiven und komponentenbasierten Benutzeroberflächen." },
+      { "name": "NodeJS", "icon": "/skillimages/nodejs.svg", "description": "JavaScript-Laufzeitumgebung für die Serverentwicklung, basierend auf der V8-Engine." },
+      { "name": "ExpressJS", "icon": "/skillimages/express.svg", "description": "Minimalistisches Framework für Node.js, das die Erstellung von APIs und Webservern vereinfacht." },
+      { "name": "Rust", "icon": "/skillimages/rust.svg", "description": "Moderne und sichere Programmiersprache, ideal für die Entwicklung von Hochleistungs-Systemen." },
+      { "name": "MongoDB", "icon": "/skillimages/mongodb.svg", "description": "Dokumentenorientierte NoSQL-Datenbank, die für die Verwaltung großer Mengen flexibler Daten verwendet wird." },
+      { "name": "MySQL", "icon": "/skillimages/mysql.svg", "description": "Relationales Datenbankmanagementsystem (RDBMS), das häufig in Webanwendungen und Unternehmenssoftware verwendet wird." },
+      { "name": "PostgreSQL", "icon": "/skillimages/postgresql.svg", "description": "Fortgeschrittene, Open-Source, relationale Datenbank mit Unterstützung für komplexe SQL-Operationen." },
+      { "name": "SQLite", "icon": "/skillimages/sqlite.svg", "description": "Leichte, eigenständige SQL-Datenbank, die häufig in eingebetteten Systemen und kleinen Anwendungen verwendet wird." },
+      { "name": "Android", "icon": "/skillimages/android.svg", "description": "Mobilbetriebssystem von Google, das verwendet wird, um mobile Apps zu erstellen." },
+      { "name": "Arduino", "icon": "/skillimages/arduino.svg", "description": "Open-Source-Plattform für Hardware und Software zur Erstellung interaktiver Elektronikprojekte." },
+      { "name": "Bootstrap", "icon": "/skillimages/bootstrap.svg", "description": "CSS-Framework, das die Erstellung moderner und responsiver Weboberflächen vereinfacht." },
+      { "name": "Flask", "icon": "/skillimages/flask.svg", "description": "Leichtgewichtiger Micro-Framework in Python für die Erstellung skalierbarer Webanwendungen." },
+      { "name": "Flutter", "icon": "/skillimages/flutter.svg", "description": "UI-Framework von Google zur Erstellung nativer Anwendungen für Mobilgeräte, Web und Desktop." },
+      { "name": "Java", "icon": "/skillimages/java.svg", "description": "Vielseitige Programmiersprache, die häufig in der Unternehmens-, Mobil- und Webentwicklung verwendet wird." },
+      { "name": "Kotlin", "icon": "/skillimages/kotlin.svg", "description": "Moderne und prägnante Programmiersprache, die bevorzugt für die Android-Entwicklung verwendet wird." },
+      { "name": "Python", "icon": "/skillimages/python.svg", "description": "Vielseitige und leicht zu erlernende Programmiersprache, die in der Webentwicklung, KI und Automatisierung eingesetzt wird." },
+      { "name": "GraphQL", "icon": "/skillimages/graphql.svg", "description": "Abfragesprache für APIs, die eine präzisere und effizientere Datenabfrage im Vergleich zu REST ermöglicht." },
+      { "name": "Sonar Cloud", "icon": "/skillimages/sonarcloud.svg", "description": "Code-Analysewerkzeug, das hilft, die Qualität und Sicherheit der Software zu verbessern." },
+      { "name": "socketIO", "icon": "/skillimages/socket.io.svg", "description": "JavaScript-Bibliothek für die Echtzeit-Kommunikation zwischen Client und Server über WebSockets." },
+      { "name": "Git", "icon": "/skillimages/git.svg", "description": "Verteiltes Versionskontrollsystem zur Verwaltung von Quellcode und Zusammenarbeit." }
     ],
     "projects": [
       {
@@ -45,8 +45,8 @@
           { "name": "MySQL", "icon": "/skillimages/mysql.svg" },
           { "name": "Java", "icon": "/skillimages/java.svg" }
         ],
-        "description": "Proyecto realizado para la materia de Ingeniería de Software, dentro del programa de licenciatura en ingeniería informática. Este software, construido con el framework JavaFX, permite gestionar los turnos de una empresa. Cada empleado puede registrar su entrada y salida a través de terminales ubicados dentro de la empresa.",
-        "links": ["github"]
+        "description": "Projekt im Rahmen des Software Engineering-Kurses im Bachelor-Studiengang Informatik. Diese Software, entwickelt mit dem JavaFX-Framework, ermöglicht das Management von Arbeitszeiten in einem Unternehmen. Jeder Mitarbeiter kann seine Ankunfts- und Abfahrtszeiten über Terminals im Unternehmen registrieren.",
+        "link": ["https://github.com/giuseppe2028/ProgettoCompleto"]
       },
       {
         "name": "MiSvaGo",
@@ -56,8 +56,8 @@
           { "name": "Kotlin", "icon": "/skillimages/kotlin.svg" },
           { "name": "SQLite", "icon": "/skillimages/sqlite.svg" }
         ],
-        "description": "Proyecto desarrollado para la creación de una aplicación de compra de paquetes de viaje. Se utilizó Kotlin y XML para la interfaz y Retrofit para las llamadas HTTP.",
-        "link": "github"
+        "description": "Projekt zur Erstellung einer App zum Kauf von Reisepaketen. Es wurden Kotlin und XML für das UI sowie Retrofit für HTTP-Anfragen verwendet.",
+        "link": "https://github.com/giuseppe2028/ProgettoPWM.git"
       },
       {
         "name": "What Do You Meme",
@@ -71,22 +71,22 @@
           { "name": "SQLite", "icon": "/skillimages/sqlite.svg" },
           { "name": "Express", "icon": "/skillimages/express.svg" }
         ],
-        "description": "Proyecto realizado para el curso de WebApp1. Se desarrolló con un backend y un frontend. El frontend fue creado con React, Bootstrap y JavaScript, mientras que el backend fue construido con Node.js, Express y JavaScript.",
-        "link": "github"
+        "description": "Projekt im Rahmen des WebApp1-Kurses. Es wurde mit einem Backend und einem Frontend entwickelt. Das Frontend wurde mit React, Bootstrap und JavaScript erstellt, während das Backend mit Node.js, Express und JavaScript entwickelt wurde.",
+        "link": "https://github.com/giuseppe2028/meme_game.git"
       }
     ],
     "education": [
       {
-        "name": "Maestría en Ciencias de la Computación en el Politécnico de Turín",
-        "date": "2023-Hoy",
+        "name": "Master in Computer Science an der Politecnico di Torino",
+        "date": "2023-Heute",
         "logo": "/formazione/logo_polito.png",
-        "description": "En este programa, he tomado cursos que me han ayudado a crecer profesionalmente, participando en diversos proyectos con equipos internacionales y profundizando en sistemas distribuidos, DevOps y metodologías ágiles."
+        "description": "In diesem Programm habe ich Kurse belegt, die mir geholfen haben, beruflich zu wachsen, an verschiedenen Projekten mit internationalen Teams teilzunehmen und mich auf verteilte Systeme, DevOps und agile Methoden zu spezialisieren."
       },
       {
-        "name": "Licenciatura en Ciencias de la Computación en la Universidad de Palermo",
+        "name": "Bachelor in Computer Science an der Universität Palermo",
         "date": "2020-2023",
         "logo": "/formazione/logo_unipa.png",
-        "description": "Durante mis estudios, aprendí desde fundamentos de ingeniería como electrónica y análisis hasta temas informáticos como Java, MySQL, Android y Kotlin, participando en proyectos en equipo."
+        "description": "Während meines Studiums habe ich sowohl grundlegende Ingenieurtechniken wie Elektronik und Analyse als auch IT-Themen wie Java, MySQL, Android und Kotlin erlernt, und an Teamprojekten mitgewirkt."
       }
     ]
   }

@@ -57,7 +57,7 @@
           { "name": "Java", "icon": "/skillimages/java.svg" }
         ],
         "description": "Project developed for the Software Engineering course, during the Bachelor's degree in Computer Engineering. This software, built using the JavaFX framework, allows you to manage the shifts of an entire company. Each employee can clock in and out on different terminals placed around the company.",
-        "links": ["github"]
+        "link": ["https://github.com/giuseppe2028/ProgettoCompleto"]
       },
       {
         "name": "MiSvaGo",
@@ -68,7 +68,7 @@
           { "name": "SQLite", "icon": "/skillimages/sqlite.svg" }
         ],
         "description": "Project developed for a travel package booking app. This project was developed using Kotlin and XML, with Retrofit for HTTP calls.",
-        "link": "github"
+        "link": "https://github.com/giuseppe2028/ProgettoPWM.git"
       },
       {
         "name": "What Do You Meme",
@@ -83,7 +83,7 @@
           { "name": "Express", "icon": "/skillimages/express.svg" }
         ],
         "description": "Project developed for the WebApp1 course. This project was developed with both a backend and a frontend. The backend was created using Node, Express, and JavaScript, while the frontend used React, Bootstrap, and JavaScript.",
-        "link": "github"
+        "link": "https://github.com/giuseppe2028/meme_game.git"
       }
     ],
     "education": [
