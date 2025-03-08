@@ -76,7 +76,7 @@ const ProjectCard = (props) => {
 
 const GithubButton = ({link}) => {
     return (
-        <ButtonLink image="public/images/github.svg" text="Github" onClick={() => {
+        <ButtonLink image={`${import.meta.env.BASE_URL}/images/github.svg`} text="Github" onClick={() => {
             window.open(link, "_blank");
         }}/>
     );
@@ -89,7 +89,7 @@ const SkillLabel = ({icon, text}) => {
             style={{border: "1px solid #8f8f8f", width: "fit-content", borderRadius: 15, fontSize: "12px"}}
         >
             <span style={{marginRight: 5, marginLeft: 0}}>
-                <img className="img-fluid" style={{width: "15px", height: "15px", objectFit: "fit-content"}} src={icon} alt="Immagine"/>
+                <img className="img-fluid" style={{width: "15px", height: "15px", objectFit: "fit-content"}} src={import.meta.env.BASE_URL+icon} alt="Immagine"/>
             </span>
             {text}
         </div>
