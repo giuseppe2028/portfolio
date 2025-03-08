@@ -34,7 +34,7 @@ function CardSection({ image, title, date, description }) {
             <Row className="d-flex g-0 align-items-center justify-content-center flex-column flex-md-row ps-0 pe-0 ms-0 me-0">
                 {image && (
                     <Col xs={12} md={4} className="text-center g-0">
-                            <img src={image} alt={title} className="fixed-size-img" />
+                            <img src={import.meta.env.BASE_URL+image} alt={title} className="fixed-size-img" />
                     </Col>
                 )}
                 <Col xs={12} md={6} className="text-center text-md-start custom-container" style={{ marginTop: 10 }}>
