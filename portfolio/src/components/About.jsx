@@ -32,12 +32,12 @@ export function About() {
             </Row>
             <Row className="d-flex justify-content-start mt-3">
                 <Col>
-                    <ButtonLink image = "public/images/github.svg" text="Github" onClick={()=>{
+                    <ButtonLink image = "images/github.svg" text="Github" onClick={()=>{
                         window.open("https://github.com/giuseppe2028", "_blank");
                     }}/>
                 </Col>
                 <Col>
-                    <ButtonLink image = "public/images/linkedin.svg" text="LinkedIn" onClick={()=>{
+                    <ButtonLink image = "images/linkedin.svg" text="LinkedIn" onClick={()=>{
                         window.open("https://www.linkedin.com/in/giuseppe-barone-749210215/", "_blank");
                     }}/>
                 </Col>

@@ -27,7 +27,7 @@ export const ButtonLink = (props) => {
             onMouseEnter={(e) => e.target.style.backgroundColor = "#8f8f8f"} // Cambio colore hover
             onMouseLeave={(e) => e.target.style.backgroundColor = "#f0f0f0"} // Ritorno al colore originale
         >
-            {props.image && <img src={props.image} alt="icon" style={{ marginRight: "10px", height: "20px" }} />}
+            {props.image && <img src={import.meta.env.BASE_URL+props.image} alt="icon" style={{ marginRight: "10px", height: "20px" }} />}
             {props.text}
         </Button>
     );
