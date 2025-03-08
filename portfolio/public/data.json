@@ -50,13 +50,13 @@
       "name": "What Do You Meme",
       "images": ["projectImage/p3/img1.png","projectImage/p3/img2.png"],
       "madeWith": [
-        { "name": "Bootstrap", "icon": "/skillimages/bootstrap.svg" },
-        { "name": "CSS", "icon": "/skillimages/css.svg" },
-        { "name": "HTML", "icon": "/skillimages/html.svg" },
-        { "name": "Javascript", "icon": "/skillimages/javascript.svg" },
-        { "name": "React", "icon": "/skillimages/react.svg" },
-        { "name": "SQLite", "icon": "/skillimages/sqlite.svg" },
-        { "name": "Express", "icon": "/skillimages/express.svg" }
+        { "name": "Bootstrap", "icon": "skillimages/bootstrap.svg" },
+        { "name": "CSS", "icon": "skillimages/css.svg" },
+        { "name": "HTML", "icon": "skillimages/html.svg" },
+        { "name": "Javascript", "icon": "skillimages/javascript.svg" },
+        { "name": "React", "icon": "skillimages/react.svg" },
+        { "name": "SQLite", "icon": "skillimages/sqlite.svg" },
+        { "name": "Express", "icon": "skillimages/express.svg" }
       ],
       "description": "Progetto realizzato per il corso di webapp1. Tale progetto è stato realizzato con un backend e un frontend. Il back-end è stato realizzato utilizzando react, bootstrap e javascript per il front-end, e node, express e javascript per il back-end.",
       "link": "https://github.com/giuseppe2028/meme_game.git"
@@ -67,13 +67,13 @@
     {
       "name": "Master degree in Computer science at Politection di Torino",
       "date": "2023-Today",
-      "logo": "/formazione/logo_polito.png",
+      "logo": "formazione/logo_polito.png",
       "description": "In questo percorso ho affrontato diversi corsi che mi hanno aiutato a crescere professionalmente, mettendo di fronte a diversi progetti, con team internazionali. Approfondendo in modo accurato i sistemi distributi, e le tecnologie di devops e agile."
     },
     {
       "name": "Bachelor degree in Computer science at Università degli studi di Palermo",
       "date": "2020-2023",
-      "logo": "/formazione/logo_unipa.png",
+      "logo": "formazione/logo_unipa.png",
       "description": "In questo percorso di studi ho affrontato diversi step, partendo da quelli ingegneristici, come l'elettronica, e analisi, fino a quelli più informatici, come Java, Mysql, android e Kotlin. Dando la possibilità di prendere parte a diversi team durante i progetti."
     }
   ]
