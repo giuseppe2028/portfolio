@@ -44,7 +44,7 @@ const SkillCard = ({ item }) => {
                 onMouseLeave={() => setHovered(false)}
             >
                 <img
-                    src={item.icon}
+                    src={`${import.meta.env.BASE_URL+item.icon}`}
                     alt={item.name}
                     className={`skill-icon ${hovered ? "blurred" : ""}`}
                     style={{
