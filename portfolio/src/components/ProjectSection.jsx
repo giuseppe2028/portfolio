@@ -76,7 +76,7 @@ const ProjectCard = (props) => {
 
 const GithubButton = ({link}) => {
     return (
-        <ButtonLink image={`${import.meta.env.BASE_URL}/images/github.svg`} text="Github" onClick={() => {
+        <ButtonLink image={`images/github.svg`} text="Github" onClick={() => {
             window.open(link, "_blank");
         }}/>
     );
