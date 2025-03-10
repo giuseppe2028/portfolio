@@ -6,6 +6,7 @@
     "skills": "Fähigkeiten",
     "projectsBar": "Projekte",
     "contact": "Kontakt",
+    "My Educational Path": "Mein Bildungsweg",
     "greeting": "Hallo <span style='font-size: 1.2em'>👋</span>, ich bin <strong>{{name}}</strong>",
     "subtitle": "Masterstudent - Softwaretechnik an der <br/><strong>{{university}}</strong>",
     "resume": "Lebenslauf herunterladen",
@@ -88,6 +89,9 @@
         "logo": "/formazione/logo_unipa.png",
         "description": "Während meines Studiums habe ich sowohl grundlegende Ingenieurtechniken wie Elektronik und Analyse als auch IT-Themen wie Java, MySQL, Android und Kotlin erlernt, und an Teamprojekten mitgewirkt."
       }
-    ]
+    ],
+    "ContactTitle": "Kontaktiere Mich",
+    "Madewith": "Hergestellt mit:",
+    "contactSubtitle": "Bitte kontaktiere mich direkt unter\n                        <a href=\"mailto:giuseppebarone2028@gmail.com\" style={{ textDecoration: \"none\"}}>\n                            giuseppebarone2028@gmail.com\n                        </a>\n                        oder über dieses Formular."
   }
 }

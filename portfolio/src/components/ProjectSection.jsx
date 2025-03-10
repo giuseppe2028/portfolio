@@ -32,6 +32,7 @@ export function ProjectSection() {
 }
 
 const ProjectCard = (props) => {
+    const {t} = useTranslation();
     return (
         <Container className="project-card mb-4">
             <Row className="d-flex justify-content-center align-items-center" style={{paddingTop:20, paddingBottom:20}}>
@@ -57,7 +58,7 @@ const ProjectCard = (props) => {
                         <h2 className="p-0">{props.title}</h2>
                     </Row>
                     <Row className="d-flex align-items-center flex-wrap gap-2 mb-3 mt-2">
-                        <h6 className="align-items-center me-0 pe-0 ps-0 pb-0 mb-0" style={{width:"fit-content"}}>Made with:</h6>
+                        <h6 className="align-items-center me-0 pe-0 ps-0 pb-0 mb-0" style={{width:"fit-content"}}>{t('Madewith')}</h6>
                         {props.madeWidth.map((el, index) => (
                             <SkillLabel key={index} icon={el.icon} text={el.name} />
                         ))}

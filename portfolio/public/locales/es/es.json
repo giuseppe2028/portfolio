@@ -10,6 +10,7 @@
     "subtitle": "Estudiante de maestría en Ingeniería de Software en <br/><strong>{{university}}</strong>",
     "resume": "Obtener Currículum",
     "I CONSTANTLY TRY TO IMPROVE": "SIEMPRE TRATO DE MEJORAR",
+    "My Educational Path": "Mi Trayectoria Educativa",
     "MY TECH STACK": "MI PILA TECNOLÓGICA",
     "More About Me": "Más Sobre Mí",
     "about1": "Soy estudiante de maestría con una gran pasión por los proyectos personales. Me gradué con una licenciatura de la Universidad de Palermo, donde trabajé en varios proyectos universitarios que me permitieron colaborar en equipos y desarrollar habilidades de comunicación, incluso con personas de todo el mundo. Además, dediqué tiempo a proyectos personales para expandir mis conocimientos y habilidades.",
@@ -99,6 +100,8 @@
         "logo": "/formazione/logo_unipa.png",
         "description": "Durante este grado, pasé por múltiples etapas, comenzando con materias de ingeniería como electrónica y análisis, y pasando a materias más enfocadas en TI como Java, MySQL, Android y Kotlin. También tuve la oportunidad de trabajar en varios equipos durante distintos proyectos."
       }
-    ]
+    ],
+    "Madewith": "Hecho con:"
   }
+
 }

@@ -6,6 +6,12 @@
     "skills": "Competenze",
     "projectsBar": "Progetti",
     "contact": "Contatto",
+    "More About Me": "Di Più Su Di Me",
+    "My Educational Path": "Il Mio Percorso Educativo",
+    "about1": "Sono uno studente magistrale con una forte passione per i progetti personali. Mi sono laureato con un Bachelor presso l'Università di Palermo, dove ho lavorato su diversi progetti universitari che mi hanno permesso di collaborare in team e sviluppare solide capacità di comunicazione, anche con persone provenienti da tutto il mondo. Inoltre, ho dedicato del tempo a progetti personali per ampliare le mie conoscenze e competenze.",
+    "about2": "Quando non programmo, mi concentro sull'aggiornamento costante sulle ultime tecnologie e sulla crescita personale. Inoltre, mi piace lavorare con l'elettronica.",
+    "about3": "Ho anche contribuito a un progetto open-source, il che mi ha aiutato a comprendere l'importanza di lavorare con grandi codebase e di revisionare il codice scritto da altri.",
+    "A Student with High Attention to Personal Projects": "Uno Studente con Grande Attenzione ai Progetti Personali",
     "greeting": "Ciao <span style='font-size: 1.2em'>👋</span>, sono <strong>{{name}}</strong>",
     "subtitle": "Studente di master in Ingegneria del software presso <br/><strong>{{university}}</strong>",
     "resume": "Scarica il curriculum",
@@ -88,6 +94,9 @@
         "logo": "/formazione/logo_unipa.png",
         "description": "Durante i miei studi ho imparato sia tecniche ingegneristiche di base come elettronica e analisi che argomenti informatici come Java, MySQL, Android e Kotlin, partecipando a progetti di gruppo."
       }
-    ]
+    ],
+    "ContactTitle": "Contattami",
+    "Madewith": "Realizzato con:",
+    "contactSubtitle": "Per favore, contattami direttamente a\n                        <a href=\"mailto:giuseppebarone2028@gmail.com\" style={{ textDecoration: \"none\"}}>\n                            giuseppebarone2028@gmail.com\n                        </a>\n                        oppure tramite questo modulo."
   }
 }

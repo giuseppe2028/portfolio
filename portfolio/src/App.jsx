@@ -29,7 +29,7 @@ function App() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            {["home", "about", "educationBar", "skills", "projectsBar", "contact"].map((section) => (
+                            {["home", "about", "education", "skills", "projects", "contact"].map((section) => (
                                 <Nav.Link
                                     key={section}
                                     className={`nav-element ${activeSection === section ? "active" : ""}`}
@@ -43,7 +43,11 @@ function App() {
                                         duration={500}
                                         onSetActive={handleSetActive}
                                     >
-                                        {t(section)} {/* Usa t() per la traduzione */}
+                                        {t(
+                                            section === "education" ? "educationBar" :
+                                                section === "projects" ? "projectsBar" :
+                                                    section
+                                        )}{/* Usa t() per la traduzione */}
                                     </Link>
                                 </Nav.Link>
                             ))}

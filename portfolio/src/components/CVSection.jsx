@@ -13,7 +13,7 @@ export function CVSection() {
              data-aos-anchor-placement="top-bottom"
              data-aos-duration="1500">
             <Row className="d-flex justify-content-center align-items-center text-center" style={{ marginBottom: 20 }}>
-                <h3 className="text-center"><strong>My Educational Path</strong></h3>
+                <h3 className="text-center"><strong>{t('My Educational Path')}</strong></h3>
             </Row>
                 {education.map((item, index) => (
                     <Col key={index} xs="auto" className="d-flex justify-content-center mb-4">
