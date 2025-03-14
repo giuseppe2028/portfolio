@@ -1,22 +1,20 @@
 import { Link, Element } from "react-scroll";
-import { HomeSection } from "./components/HomeSection.jsx";
-import "./App.css";
-import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
+import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"
+import { HomeSection } from "./components/HomeSection.jsx";
 import { Contact } from "./components/Contact.jsx";
 import { ProjectSection } from "./components/ProjectSection.jsx";
 import { SkillSection } from "./components/SkillSection.jsx";
 import { CVSection } from "./components/CVSection.jsx";
 import { About } from "./components/About.jsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { OptionBar } from "./components/OptionBar.jsx";
-import { useTranslation } from 'react-i18next';
 import Dropdown from "./components/Dropdown.jsx";
-import ThemeToggle from "./components/ThemeToggle.jsx"; // Aggiungi useTranslation
 
 function App() {
-    const { t,i18n } = useTranslation(); // Ottieni il metodo t per tradurre
-    const [activeSection, setActiveSection] = useState([]);
+    const { t } = useTranslation();
+    const [activeSection, setActiveSection] = useState(""); // Deve essere una stringa
 
     const handleSetActive = (to) => {
         setActiveSection(to);
@@ -24,88 +22,62 @@ function App() {
 
     return (
         <div>
-            <Navbar expand="lg" fixed="top" className="custom-navbar">
+            <Navbar expand="lg" fixed="top" className="custom-navbar bg-body-tertiary">
                 <Container>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            {["home", "about", "education", "skills", "projects", "contact"].map((section) => (
-                                <Nav.Link
-                                    key={section}
-                                    className={`nav-element ${activeSection === section ? "active" : ""}`}
-                                >
-                                    <Link
-                                        activeClass="active"
-                                        to={section}
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-50}
-                                        duration={500}
-                                        onSetActive={handleSetActive}
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Offcanvas
+                        id="offcanvasNavbar-expand-lg"
+                        aria-labelledby="offcanvasNavbarLabel-expand-lg"
+                        placement="start"
+                    >
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
+                                Offcanvas
+                            </Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <Nav className="me-auto">
+                                {["home", "about", "education", "skills", "projects", "contact"].map((section) => (
+                                    <Nav.Link
+                                        key={section}
+                                        className={`nav-element ${activeSection === section ? "active" : ""}`}
                                     >
-                                        {t(
-                                            section === "education" ? "educationBar" :
-                                                section === "projects" ? "projectsBar" :
-                                                    section
-                                        )}{/* Usa t() per la traduzione */}
-                                    </Link>
-                                </Nav.Link>
-                            ))}
-                        </Nav>
-                    </Navbar.Collapse>
+                                        <Link
+                                            activeClass="active"
+                                            to={section}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-50}
+                                            duration={500}
+                                            onSetActive={handleSetActive} // Registra la sezione attiva
+                                        >
+                                            {t(
+                                                section === "education" ? "educationBar" :
+                                                    section === "projects" ? "projectsBar" :
+                                                        section
+                                            )}
+                                        </Link>
+                                    </Nav.Link>
+                                ))}
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
                 </Container>
             </Navbar>
-            <div className="fixed-dropdown">
-                <Dropdown/>
-            </div>
-            {/* Sezione Home */}
+
+              <div className="fixed-dropdown">
+                    <Dropdown/>
+                </div>
+
+
+            {/* Sezioni */}
             <Element name="home">
-                <section className="section" data-aos="fade-up" data-aos-duration="1200">
-                    <HomeSection/>
-                </section>
-            </Element>
-
-            {/* Sezione About */}
-            <Element name="about">
-                <section className="section" data-aos="fade-up" data-aos-duration="1200">
-                    <About/>
-                </section>
-            </Element>
-
-            {/* Sezione Education */}
-            <Element name="education">
-                <section className="section" data-aos="fade-up" data-aos-duration="1200">
-                    <CVSection/>
-                </section>
-            </Element>
-
-            {/* Sezione Skills */}
-            <Element name="skills">
-                <section className="section section-skill" data-aos="fade-up" data-aos-duration="1200">
-                    <SkillSection/>
-                </section>
-            </Element>
-
-            {/* Sezione Projects */}
-            <Element name="projects">
-                <section className="section">
-                    <ProjectSection/>
-                </section>
-            </Element>
-
-            {/* Sezione Contact */}
-            <Element name="contact">
-                <section
-                    className="section"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-aos-offset="300"
-                    data-aos-delay="200"
-                    data-aos-anchor-placement="top-bottom"
-                >
-                    <Contact/>
-                </section>
-            </Element>
+                <section className="section"><HomeSection /></section></Element>
+            <Element name="about"><section className="section"><About /></section></Element>
+            <Element name="education"><section className="section"><CVSection /></section></Element>
+            <Element name="skills"><section className="section"><SkillSection /></section></Element>
+            <Element name="projects"><section className="section"><ProjectSection /></section></Element>
+            <Element name="contact"><section className="section"><Contact /></section></Element>
         </div>
     );
 }

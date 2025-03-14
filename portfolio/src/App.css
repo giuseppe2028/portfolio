@@ -219,7 +219,7 @@ body {
         border-radius: 50px;
         height: auto;
         border: none;
-        background-color: transparent;
+        background-color: transparent !important;
         margin: 10px;  /* Rimuove il margine automatico per il centraggio */
         display: flex;
         padding-right: 10px;
@@ -231,3 +231,4 @@ body {
         width: fit-content;  /* Impedisce alla navbar di allargarsi completamente */
     }
 }
+

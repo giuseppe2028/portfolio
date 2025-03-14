@@ -86,6 +86,87 @@
         ],
         "description": "Project developed for the WebApp1 course. This project was developed with both a backend and a frontend. The backend was created using Node, Express, and JavaScript, while the frontend used React, Bootstrap, and JavaScript.",
         "link": "https://github.com/giuseppe2028/meme_game.git"
+      },
+      {
+        "name": "Ezelectrionics",
+        "images": ["projectImage/p5/img1.png", "projectImage/p5/img2.png"],
+        "madeWith": [
+          { "name": "typescript", "icon": "/skillimages/typescript.svg" },
+          { "name": "SQLite", "icon": "/skillimages/sqlite.svg" }
+        ],
+        "description": "Project created for the Software Engineering I course. This project was structured to provide both the frontend and backend of the entire application. Special attention was paid to the use of test creation modules, written using the Jest library.",
+        "link": ["https://github.com/giuseppe2028/ezelectrionics"]
+      },
+      {
+        "name": "FixMate",
+        "images": ["projectImage/p7/img1.png", "projectImage/p7/img2.png", "projectImage/p7/img3.png"],
+        "madeWith": [
+          { "name": "css", "icon": "/skillimages/css.svg" },
+          { "name": "SQLite", "icon": "/skillimages/sqlite.svg" },
+          { "name": "HTML", "icon": "/skillimages/html.svg" },
+          { "name": "Nodejs", "icon": "/skillimages/nodejs.svg" },
+          { "name": "React", "icon": "/skillimages/react.svg" }
+        ],
+        "description": "Project created for the Human Computer Interaction course. It is a web app that allows chess players to compete with tutors or artificial intelligence. The application includes a chat with the AI (using the Gemini API) and a chat with other tutors to discuss chess puzzles.",
+        "link": ["https://github.com/giuseppe2028/ezelectrionics"]
+      },
+      {
+        "name": "ivy-wallet",
+        "images": ["projectImage/p4/img1.png", "projectImage/p4/img2.png", "projectImage/p4/img3.png"],
+        "madeWith": [
+          { "name": "Android", "icon": "/skillimages/android.svg" },
+          { "name": "Git", "icon": "/skillimages/git.svg" },
+          { "name": "Kotlin", "icon": "/skillimages/kotlin.svg" }
+        ],
+        "description": "Contributed to an open-source project for tracking monthly expenses. This project helped me understand how to collaborate within an open-source project and also learn Jetpack Compose.",
+        "link": ["https://github.com/Ivy-Apps/ivy-wallet?tab=readme-ov-file"]
+      },
+      {
+        "name": "Portfolio",
+        "images": ["projectImage/p6/img1.png", "projectImage/p6/img2.png"],
+        "madeWith": [
+          { "name": "React", "icon": "/skillimages/react.svg" },
+          { "name": "HTML", "icon": "/skillimages/html.svg" },
+          { "name": "CSS", "icon": "/skillimages/css.svg" }
+        ],
+        "description": "Project created in React for the personal portfolio.",
+        "link": ["https://github.com/giuseppe2028/portfolio"]
+      },
+      {
+        "name": "Multiplatform Screen Casting",
+        "images": ["projectImage/p9/img1.png", "projectImage/p9/img2.png"],
+        "madeWith": [
+          { "name": "Rust", "icon": "/skillimages/rust.svg" }
+        ],
+        "description": "Project created as part of a university course. It consists of a screencasting app where a caster can share their screen with a receiver. The project also works on two different hosts by providing an IP address.",
+        "link": ["https://github.com/giuseppe2028/MultiPlatform_screenCasting.git"]
+      },
+      {
+        "name": "BarberApp",
+        "images": ["projectImage/p8/img1.png", "projectImage/p8/img2.png", "projectImage/p8/img3.png", "projectImage/p8/img4.png"],
+        "madeWith": [
+          { "name": "MongoDB", "icon": "/skillimages/mongodb.svg" },
+          { "name": "Flutter", "icon": "/skillimages/flutter.svg" }
+        ],
+        "description": "App to test Flutter and MongoDB. In this app, the user can make a reservation at a barber.",
+        "link": ["https://github.com/giuseppe2028/portfolio"]
+      },
+      {
+        "name": "KirunaExplorer",
+        "images": ["projectImage/p10/img1.png", "projectImage/p10/img2.png"],
+        "madeWith": [
+          { "name": "typescript", "icon": "/skillimages/typescript.svg" },
+          { "name": "Bootstrap", "icon": "/skillimages/bootstrap.svg" },
+          { "name": "Express", "icon": "/skillimages/express.svg" },
+          { "name": "Git", "icon": "/skillimages/git.svg" },
+          { "name": "Postgresql", "icon": "/skillimages/postgresql.svg" },
+          { "name": "React", "icon": "/skillimages/react.svg" },
+          { "name": "HTML", "icon": "/skillimages/html.svg" },
+          { "name": "CSS", "icon": "/skillimages/css.svg" },
+          { "name": "Javascript", "icon": "/skillimages/javascript.svg" }
+        ],
+        "description": "Project created for the Software Engineering II course. This project was created for the town of Kiruna, a city that is moving from point A to point B. The goal was to map the entire history of the city's change using maps.",
+        "link": ["https://github.com/SE2-Group1/main-project"]
       }
     ],
     "education": [

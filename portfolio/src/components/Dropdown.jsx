@@ -6,7 +6,7 @@ import "@fontsource/open-sans";
 import "./DropDown.css"
 import {useTranslation} from "react-i18next";
 const locales = [
-    "en-GB","de-DE", "es-ES", "it-IT",
+    "en-GB", "it-IT",
 ];
 
 const getFlagSrc = (countryCode) => {
