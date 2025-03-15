@@ -230,5 +230,11 @@ body {
         padding-bottom: 7px;
         width: fit-content;  /* Impedisce alla navbar di allargarsi completamente */
     }
+    .custom-offcanvas {
+        width: 70% !important; /* Riduci la larghezza */
+        max-width: 300px; /* Imposta un limite massimo */
+    }
 }
+
+
 

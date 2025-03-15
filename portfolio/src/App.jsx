@@ -15,7 +15,7 @@ import Dropdown from "./components/Dropdown.jsx";
 function App() {
     const { t } = useTranslation();
     const [activeSection, setActiveSection] = useState(""); // Deve essere una stringa
-
+    const [showLanguageButton,setShowLanguageButton] = useState(true);
     const handleSetActive = (to) => {
         setActiveSection(to);
     };
@@ -23,12 +23,14 @@ function App() {
     return (
         <div>
             <Navbar expand="lg" fixed="top" className="custom-navbar bg-body-tertiary">
-                <Container>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Container fluid>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" onClick = {()=>{setShowLanguageButton(false)}}/>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar-expand-lg"
                         aria-labelledby="offcanvasNavbarLabel-expand-lg"
                         placement="start"
+                        className="custom-offcanvas"
+                        onHide={()=>{setShowLanguageButton(true)}}
                     >
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
@@ -65,9 +67,9 @@ function App() {
                 </Container>
             </Navbar>
 
-              <div className="fixed-dropdown">
-                    <Dropdown/>
-                </div>
+            {showLanguageButton && <div className="fixed-dropdown">
+                <Dropdown/>
+            </div>}
 
 
             {/* Sezioni */}
