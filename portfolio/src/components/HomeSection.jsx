@@ -45,7 +45,12 @@ export function HomeSection() {
                         className="img-fluid"
                         src={profileImage}
                         alt="Giuseppe Barone"
-                        style={{ width: "80%", maxWidth: "300px", borderRadius: "50%" }}
+                        style={{
+                            width: "300px",         // larghezza fissa
+                            height: "300px",        // altezza uguale per garantire il cerchio
+                            borderRadius: "50%",    // rende l'immagine circolare
+                            objectFit: "cover",     // ritaglia l'immagine senza deformarla
+                        }}
                     />
                 </Col>
             </Row>
